@@ -38,7 +38,7 @@ const SectionOne = () => {
           >
             Contactar
           </Button>
-          <Button variant="link" color="second" size="sm">
+          <Button variant="link" color="second" paddingBottom={10}>
             Leer más
           </Button>
         </Stack>

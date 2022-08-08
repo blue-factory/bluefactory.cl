@@ -11,6 +11,7 @@ const Header = () => {
       alignSelf="flex-start"
       justifyContent="center"
       gridGap={2}
+      margin="8"
     >
       <Box marginLeft="auto">
         <LanguageToogle />
