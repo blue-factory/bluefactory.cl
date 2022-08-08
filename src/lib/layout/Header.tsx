@@ -1,6 +1,6 @@
 import { Box, Flex } from "@chakra-ui/react";
 
-import ThemeToggle from "./ThemeToggle";
+import LanguageToogle from "./LanguageToogle";
 
 const Header = () => {
   return (
@@ -13,7 +13,7 @@ const Header = () => {
       gridGap={2}
     >
       <Box marginLeft="auto">
-        <ThemeToggle />
+        <LanguageToogle />
       </Box>
     </Flex>
   );
