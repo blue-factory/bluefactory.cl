@@ -1,4 +1,4 @@
-import { ChakraProvider } from "@chakra-ui/react";
+import { Box, ChakraProvider } from "@chakra-ui/react";
 import { BrowserRouter as Router } from "react-router-dom";
 
 import Layout from "lib/layout";
@@ -8,9 +8,11 @@ import { theme } from "lib/styles/customTheme";
 const App = () => (
   <ChakraProvider theme={theme}>
     <Router>
-      <Layout>
-        <Routings />
-      </Layout>
+      <Box height="100vh">
+        <Layout>
+          <Routings />
+        </Layout>
+      </Box>
     </Router>
   </ChakraProvider>
 );

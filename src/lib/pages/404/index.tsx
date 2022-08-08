@@ -1,12 +1,4 @@
-import {
-  Box,
-  Button,
-  Grid,
-  Heading,
-  Image,
-  Link,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Button, Grid, Heading, Text } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 
 const Page404 = () => {
@@ -16,18 +8,16 @@ const Page404 = () => {
 
   return (
     <Grid gap={4} textAlign="center">
-      <Heading>Page not Found</Heading>
+      <Heading>Página no encontrada</Heading>
 
       <Box maxWidth={[280, 400]} marginX="auto">
-        <Image width={400} src="/assets/404 Error-rafiki.svg" />
-        <Link fontSize="xs" href="https://stories.freepik.com/web" isExternal>
-          Illustration by Freepik Stories
-        </Link>
+        <Text fontSize={100}>🚫</Text>
       </Box>
 
       <Box>
-        <Text>It&apos;s Okay!</Text>
-        <Button onClick={handleBackToHome}>Let&apos;s Head Back</Button>
+        <Button onClick={handleBackToHome} marginTop={20}>
+          Volver al inicio
+        </Button>
       </Box>
     </Grid>
   );
