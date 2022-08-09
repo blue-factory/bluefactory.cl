@@ -1,4 +1,12 @@
-import { Box, Button, Container, Heading, Stack, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Container,
+  Heading,
+  Image,
+  Stack,
+  Text,
+} from "@chakra-ui/react";
 
 const SectionOne = () => {
   return (
@@ -13,7 +21,10 @@ const SectionOne = () => {
           <Text as="span" color="first">
             software a medida
           </Text>
-          &nbsp;y reclutamiento de personal
+          &nbsp;y reclutamiento de{" "}
+          <Text as="span" color="third">
+            talentos
+          </Text>
         </Heading>
         <Text color="gray.500">
           Creemos que la fusión de metodologías ágiles, tecnologías, UI/UX y el
@@ -38,9 +49,8 @@ const SectionOne = () => {
           >
             Contactar
           </Button>
-          <Button variant="link" color="second" paddingBottom={10}>
-            Leer más
-          </Button>
+
+          <Image width={200} src="/assets/scroll.gif" />
         </Stack>
       </Stack>
     </Container>
