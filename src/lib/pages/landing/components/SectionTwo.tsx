@@ -6,8 +6,12 @@ import {
   useBreakpointValue,
   Button,
 } from "@chakra-ui/react";
+import { useTranslation } from "react-i18next";
+import "../../../../i18n";
 
 const SectionTwo = () => {
+  const { t } = useTranslation("Landing");
+
   return (
     <Flex
       w="full"
@@ -30,8 +34,7 @@ const SectionTwo = () => {
             lineHeight={1.2}
             fontSize={useBreakpointValue({ base: "3xl", md: "4xl" })}
           >
-            Tienes un desafiador proyecto a desarrollar y te gustaría llevarlo a
-            cabo?
+            {t("SectionTwo.description")}
           </Text>
 
           <Button
@@ -41,7 +44,7 @@ const SectionTwo = () => {
             color="white"
             _hover={{ bg: "third" }}
           >
-            Vamos a conversar
+            {t("SectionTwo.button")}
           </Button>
         </Stack>
       </VStack>

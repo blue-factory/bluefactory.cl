@@ -10,6 +10,15 @@
       "talents": "talentos",
       "description": "Creemos que la fusión de metodologías ágiles, tecnologías, UI/UX y el foco en nuestros clientes, es la fórmula ideal para resolver cualquier problema",
       "button": "Contactar"
+    },
+    "SectionTwo": {
+      "description": "Tienes un desafiador proyecto a desarrollar y te gustaría llevarlo a cabo?",
+      "button": "Vamos a conversar"
+    },
+    "SectionThree": {
+      "title": "Diseño, software e reclutamiento",
+      "cloud": "Desarrollo de software a medida, desde la arquitectura de la aplicación hasta la implementación de la plataforma en la nube",
+      "iot": "Desarrollo de proyectos en el internet de las cosas (IoT)"
     }
   }
 }

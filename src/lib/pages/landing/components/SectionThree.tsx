@@ -9,14 +9,18 @@ import {
   HStack,
   VStack,
 } from "@chakra-ui/react";
+import { useTranslation } from "react-i18next";
 import { AiFillCloud } from "react-icons/ai";
 import { GiRadioTower } from "react-icons/gi";
+import "../../../../i18n";
 
 const SectionThree = () => {
+  const { t } = useTranslation("Landing");
+
   return (
     <Box p={4} m={10}>
       <Stack spacing={4} as={Container} maxW="3xl" textAlign="center">
-        <Heading fontSize="3xl">Diseño, software e ingeniería</Heading>
+        <Heading fontSize="3xl">{t("SectionThree.title")}</Heading>
       </Stack>
 
       <Container maxW="6xl" mt={10}>
@@ -30,8 +34,7 @@ const SectionThree = () => {
                 <Text as="span" color="first">
                   Cloud: &nbsp;
                 </Text>
-                Desarrollo de proyectos en la nube, alta escalabilidad y
-                seguridad
+                {t("SectionThree.cloud")}
               </Text>
             </VStack>
           </HStack>
@@ -45,8 +48,7 @@ const SectionThree = () => {
                 <Text as="span" color="third">
                   IoT: &nbsp;
                 </Text>
-                Desarrollo de proyectos en el internet de las cosas (IoT),
-                conexión de datos a la nube
+                {t("SectionThree.iot")}
               </Text>
             </VStack>
           </HStack>

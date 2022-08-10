@@ -10,6 +10,15 @@
       "talents": "talent recruitment",
       "description": "We believe that the fusion of agile methodologies, technologies, UI/UX and the focus on our customers, is the ideal formula to solve any problem",
       "button": "Contact"
+    },
+    "SectionTwo": {
+      "description": "Do you have a challenging project to develop and would you like to carry it out?",
+      "button": "Let's talk"
+    },
+    "SectionThree": {
+      "title": "Design, software and recruitment",
+      "cloud": "Custom software development, from application architecture to cloud platform deployment",
+      "iot": "Development of projects in the Internet of Things (IoT)"
     }
   }
 }
