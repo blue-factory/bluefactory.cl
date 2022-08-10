@@ -1,5 +1,15 @@
 {
   "Hello": {
     "hello": "Hello"
+  },
+  "Landing": {
+    "SectionOne": {
+      "develop": "",
+      "software": "Custom software development ",
+      "recruitment": "and ",
+      "talents": "talent recruitment",
+      "description": "We believe that the fusion of agile methodologies, technologies, UI/UX and the focus on our customers, is the ideal formula to solve any problem",
+      "button": "Contact"
+    }
   }
 }

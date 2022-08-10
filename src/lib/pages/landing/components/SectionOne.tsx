@@ -7,8 +7,12 @@ import {
   Stack,
   Text,
 } from "@chakra-ui/react";
+import { useTranslation } from "react-i18next";
+import "../../../../i18n";
 
 const SectionOne = () => {
+  const { t } = useTranslation("Landing");
+
   return (
     <Container maxW="3xl">
       <Stack as={Box} textAlign="center" spacing={{ base: 8, md: 14 }}>
@@ -17,20 +21,16 @@ const SectionOne = () => {
           fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
           lineHeight="120%"
         >
-          Desarrollo de <br />
+          {t("SectionOne.develop")} <br />
           <Text as="span" color="first">
-            software a medida
+            {t("SectionOne.software")}
           </Text>
-          &nbsp;y reclutamiento de{" "}
+          {t("SectionOne.recruitment")}
           <Text as="span" color="third">
-            talentos
+            {t("SectionOne.talents")}
           </Text>
         </Heading>
-        <Text color="gray.500">
-          Creemos que la fusión de metodologías ágiles, tecnologías, UI/UX y el
-          foco en nuestros clientes, es la fórmula ideal para resolver cualquier
-          problema.
-        </Text>
+        <Text color="gray.500">{t("SectionOne.description")}</Text>
         <Stack
           direction="column"
           spacing={3}
@@ -47,7 +47,7 @@ const SectionOne = () => {
               bg: "second",
             }}
           >
-            Contactar
+            {t("SectionOne.button")}
           </Button>
 
           <Image width={200} src="/assets/scroll.gif" />
