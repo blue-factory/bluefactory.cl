@@ -9,6 +9,9 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
+
+import InOut from "../../../../animations/InOut";
+
 import "../../../../i18n";
 
 const SectionOne = () => {
@@ -17,20 +20,23 @@ const SectionOne = () => {
   return (
     <Container maxW="3xl">
       <Stack as={Box} textAlign="center" spacing={{ base: 8, md: 14 }}>
-        <Heading
-          fontWeight={600}
-          fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
-          lineHeight="120%"
-        >
-          {t("SectionOne.develop")} <br />
-          <Text as="span" color="first">
-            {t("SectionOne.software")}
-          </Text>
-          {t("SectionOne.recruitment")}
-          <Text as="span" color="third">
-            {t("SectionOne.talents")}
-          </Text>
-        </Heading>
+        <InOut>
+          <Heading
+            fontWeight={600}
+            fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
+            lineHeight="120%"
+          >
+            {t("SectionOne.develop")} <br />
+            <Text as="span" color="first">
+              {t("SectionOne.software")}
+            </Text>
+            {t("SectionOne.recruitment")}
+            <Text as="span" color="third">
+              {t("SectionOne.talents")}
+            </Text>
+          </Heading>
+        </InOut>
+
         <Text color="gray.500">{t("SectionOne.description")}</Text>
         <Stack
           direction="column"
