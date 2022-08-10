@@ -18,7 +18,7 @@ const SectionThree = () => {
   const { t } = useTranslation("Landing");
 
   return (
-    <Box p={4} m={10}>
+    <Box p={[0, 0, 4, 4]} m={10}>
       <Stack spacing={4} as={Container} maxW="3xl" textAlign="center">
         <Heading fontSize="3xl">{t("SectionThree.title")}</Heading>
       </Stack>
@@ -26,7 +26,7 @@ const SectionThree = () => {
       <Container maxW="6xl" mt={10}>
         <SimpleGrid columns={{ base: 1, md: 2, lg: 2 }}>
           <HStack padding={["0", "5", "5", "5"]}>
-            <Box color="first" px={2}>
+            <Box color="first">
               <Icon as={AiFillCloud} w={10} h={10} />
             </Box>
             <VStack align="start">
@@ -39,8 +39,8 @@ const SectionThree = () => {
             </VStack>
           </HStack>
 
-          <HStack pt={["10", "0", "0"]}>
-            <Box color="third" px={2}>
+          <HStack pt={["10", "0", "0", "0"]}>
+            <Box color="third">
               <Icon as={GiRadioTower} w={10} h={10} />
             </Box>
             <VStack align="start">

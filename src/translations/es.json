@@ -19,6 +19,14 @@
       "title": "Diseño, software e reclutamiento",
       "cloud": "Desarrollo de software a medida, desde la arquitectura de la aplicación hasta la implementación de la plataforma en la nube",
       "iot": "Desarrollo de proyectos en el internet de las cosas (IoT)"
+    },
+    "SectionFour": {
+      "title": "Nuestros clientes dicen",
+      "description": "Hemos trabajado con clientes de 🇨🇱 y 🇺🇸",
+      "entelTitle": "Colaboración eficiente",
+      "entelDescription": "Hemos trabajado con entel para desarrollar una plataforma de monitoreo de agua ",
+      "xTitle": "Buen trabajo",
+      "xDescription": "Testimonio cliente"
     }
   }
 }

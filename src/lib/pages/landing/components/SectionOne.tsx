@@ -4,6 +4,7 @@ import {
   Container,
   Heading,
   Image,
+  Link,
   Stack,
   Text,
 } from "@chakra-ui/react";
@@ -38,19 +39,21 @@ const SectionOne = () => {
           alignSelf="center"
           position="relative"
         >
-          <Button
-            colorScheme="blue"
-            bg="first"
-            rounded="full"
-            px={6}
-            _hover={{
-              bg: "second",
-            }}
-          >
-            {t("SectionOne.button")}
-          </Button>
+          <Link href="mailto:hola@bluefactory.cl" isExternal>
+            <Button
+              colorScheme="blue"
+              bg="first"
+              rounded="full"
+              px={6}
+              _hover={{
+                bg: "second",
+              }}
+            >
+              {t("SectionOne.button")}
+            </Button>
+          </Link>
 
-          <Image width={200} src="/assets/scroll.gif" />
+          <Image width={[150, 150, 200, 200]} src="/assets/scroll.gif" />
         </Stack>
       </Stack>
     </Container>

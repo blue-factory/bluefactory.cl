@@ -9,6 +9,8 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import type { ReactNode } from "react";
+import { useTranslation } from "react-i18next";
+import "../../../../i18n";
 
 const Testimonial = ({ children }: { children: ReactNode }) => {
   return <Box>{children}</Box>;
@@ -77,12 +79,14 @@ const TestimonialAvatar = ({ src, name }: { src: string; name: string }) => {
 };
 
 const SectionFour = () => {
+  const { t } = useTranslation("Landing");
+
   return (
     <Box bg={useColorModeValue("gray.100", "gray.700")}>
-      <Container maxW="7xl" py={16} as={Stack} spacing={12}>
+      <Container maxW="6xl" py={16} as={Stack} spacing={12}>
         <Stack spacing={0} align="center">
-          <Heading>Nuestros clientes dicen</Heading>
-          <Text>Hemos trabajado con clientes de 🇨🇱 y 🇺🇸</Text>
+          <Heading>{t("SectionFour.title")}</Heading>
+          <Text>{t("SectionFour.description")}</Text>
         </Stack>
         <Stack
           direction={{ base: "column", md: "row" }}
@@ -90,10 +94,11 @@ const SectionFour = () => {
         >
           <Testimonial>
             <TestimonialContent>
-              <TestimonialHeading>Colaboración eficiente</TestimonialHeading>
+              <TestimonialHeading>
+                {t("SectionFour.entelTitle")}
+              </TestimonialHeading>
               <TestimonialText>
-                Los desarrolladores de BlueFactory ayudaron a sacar adelante el
-                proyecto en Entel Ocean
+                {t("SectionFour.entelDescription")}
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
@@ -104,12 +109,12 @@ const SectionFour = () => {
 
           <Testimonial>
             <TestimonialContent>
-              <TestimonialHeading>Buen trabajo</TestimonialHeading>
-              <TestimonialText>Poner testimonio de cliente aca</TestimonialText>
+              <TestimonialHeading>{t("SectionFour.xTitle")}</TestimonialHeading>
+              <TestimonialText>{t("SectionFour.xDescription")}</TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
               src="https://pbs.twimg.com/profile_images/1012362101510160384/EjayQ10E_400x400.jpg"
-              name="Otro cliente"
+              name="Mr X"
             />
           </Testimonial>
         </Stack>

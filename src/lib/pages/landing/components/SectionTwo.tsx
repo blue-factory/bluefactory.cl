@@ -5,6 +5,7 @@ import {
   VStack,
   useBreakpointValue,
   Button,
+  Link,
 } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
 import "../../../../i18n";
@@ -37,15 +38,17 @@ const SectionTwo = () => {
             {t("SectionTwo.description")}
           </Text>
 
-          <Button
-            width={200}
-            bg="first"
-            rounded="full"
-            color="white"
-            _hover={{ bg: "third" }}
-          >
-            {t("SectionTwo.button")}
-          </Button>
+          <Link href="mailto:hola@bluefactory.cl" isExternal>
+            <Button
+              width={200}
+              bg="first"
+              rounded="full"
+              color="white"
+              _hover={{ bg: "third" }}
+            >
+              {t("SectionTwo.button")}
+            </Button>
+          </Link>
         </Stack>
       </VStack>
     </Flex>

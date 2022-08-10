@@ -19,6 +19,14 @@
       "title": "Design, software and recruitment",
       "cloud": "Custom software development, from application architecture to cloud platform deployment",
       "iot": "Development of projects in the Internet of Things (IoT)"
+    },
+    "SectionFour": {
+      "title": "Our clients say",
+      "description": "we have worked with clients from 🇨🇱 and 🇺🇸",
+      "entelTitle": "Efficient collaboration",
+      "entelDescription": "We have worked with entel to develop a water monitoring platform",
+      "xTitle": "Good job",
+      "xDescription": "Client testimony"
     }
   }
 }
