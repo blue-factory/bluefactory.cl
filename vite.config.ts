@@ -5,6 +5,7 @@ import { resolve } from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/bluefactory.cl/",
   plugins: [svgr(), react()],
   resolve: {
     alias: {

@@ -1,8 +1,8 @@
 {
-  "name": "vite-react-chakra-starter",
+  "name": "bluefactory.cl",
   "version": "0.1.0",
-  "private": true,
-  "author": "sozonome",
+  "private": false,
+  "author": "Cristian Valdivia",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -46,6 +46,7 @@
     "commitlint": "^17.0.3",
     "eslint": "^8.20.0",
     "eslint-config-sznm": "^1.0.0",
+    "gh-pages": "^4.0.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
